@@ -1,0 +1,16 @@
+# Copy this file to docker-compose.override.yml and adjust the values
+# This file will not be tracked in Git and overrides the default configuration
+
+services:
+  jellyfin-webhook-forwarder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jellyfin-webhook-forwarder
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    restart: unless-stopped

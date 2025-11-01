@@ -1,0 +1,13 @@
+services:
+  jellyfin-webhook-forwarder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jellyfin-webhook-forwarder
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    restart: unless-stopped
