@@ -121,4 +121,4 @@ docker run -p 8080:8080 webhook-forwarder
 
 ## License
 
-MIT License
+Do whatever you want with this code. No restrictions.
