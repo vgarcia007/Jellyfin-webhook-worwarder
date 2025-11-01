@@ -17,7 +17,7 @@ A Flask-based webhook forwarder that receives Jellyfin webhooks and sends notifi
 1. Clone repository:
 ```bash
 git clone <repository-url>
-cd webhook_forwarder
+cd jellyfin-webhook-forwarder
 ```
 
 2. Create your environment file:
